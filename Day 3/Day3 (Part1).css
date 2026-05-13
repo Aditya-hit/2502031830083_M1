@@ -48,11 +48,34 @@ body{
     border: 1px solid black;
 }
 
-    /* _____________________________________Float point Example_______________________________________  */
+    /* _____________________________________Float Point Example_______________________________________  */
 .box {
   float: left;
   width: 100px;
   height: 50px;
   margin: 10px;
   background: gold;
+}
+
+    /* _____________________________________Media Query Example_______________________________________  */
+
+.weather {
+    display: flex;
+    gap: 10px;
+}
+
+.cloud {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .weather {
+        display: flex;
+        flex-direction: column;
+    }
+    .cloud {
+        background-color: lightgreen;
+    }
 }
