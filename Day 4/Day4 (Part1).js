@@ -15,5 +15,6 @@ document.getElementsByClassName("sum")[1].innerHTML = "Value Of A is : " + a;
 document.getElementsByClassName("sum")[2].innerHTML = "Value Of B is : " + b;
 document.getElementsByClassName("sum")[3].innerHTML = "Value Of C is : " + c;
 
+// ______________________________________TypeOf Method Example___________________________________________
 let k = true;
 console.log(typeof k);  
