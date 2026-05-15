@@ -101,12 +101,12 @@
 //   n++; 
 // }
 
-let o = 1;
-do {
-  if (o % 2 === 0) {
-    console.log(o + " is Even");
-  } else {
-    console.log(o + " is Odd");
-  }
-  o++;
-} while (o <= 10);
+// let o = 1;
+// do {
+//   if (o % 2 === 0) {
+//     console.log(o + " is Even");
+//   } else {
+//     console.log(o + " is Odd");
+//   }
+//   o++;
+// } while (o <= 10);
