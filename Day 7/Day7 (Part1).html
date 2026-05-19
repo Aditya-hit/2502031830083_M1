@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{background:#0b0b0b;}
+    .nav-link{color:#aaa!important}
+    .nav-link:hover{color:#fff!important}
+    .logo span{color:#ff6b2c}
+    .icon-btn{width:40px;height:40px;border:1px solid #333}
+    .hire-btn{background:#ff6b2c}
+
+    body{background:#0b0b0b;color:#fff}
+    .text-orange{color:#ff6b2c}
+    .text-gray{color:#9c9c9c}
+    .hero-img{width:380px;height:420px;object-fit:cover;border-radius:25px}
+    .badge-orange{background:#ff6b2c}
+    .btn-orange{background:#ff6b2c;color:#fff}
+    .btn-orange:hover{background:#e65a1f;color:#fff}
+    hr{border-color:#333}
+
+    body{background:#0b0b0b;color:#fff}
+    .text-orange{color:#ff6b2c}
+    .card-box{background:#151515;border:1px solid #2a2a2a}
+    .icon-box{width:55px;height:55px;background:#222}
+    .text-gray{color:#9a9a9a}
+
+    body {
+      background-color: #121212;
+      color: #9e9e9e; 
+    }
+    .text-orange {
+      color: #ff4d29; 
+    }
+    .tool-badge {
+      background-color: #212529; 
+      color: #a0a0a0;
+      border: 1px solid #343a40;
+      transition: all 0.2s ease;
+    }
+    .tool-badge:hover {
+      background-color: #2c3034;
+      color: #ffffff;
+    }
+
+    body {
+      background-color: #0b0f12;
+      min-height: 100vh;
+    }
+
+    .contact-card {
+      background-color: #22252a;
+      background-image: radial-gradient(circle at top right, rgba(255, 77, 41, 0.08), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(255, 77, 41, 0.05), transparent 40%);
+    }
+    
+    .text-orange {
+      color: #ff4d29;
+    }
+
+    .social-icon-btn {
+      background-color: #2b2e35;
+      color: #a0a5b0;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .social-icon-btn:hover {
+      background-color: #383c44;
+      color: #ffffff;
+    }
+
+
+    .custom-input {
+      background-color: rgba(0, 0, 0, 0.15) !important;
+      border: 1px solid #3d424c !important;
+      color: #ffffff !important;
+    }
+    .custom-input:focus {
+      border-color: #ff4d29 !important;
+      box-shadow: 0 0 0 0.25rem rgba(255, 77, 41, 0.25) !important;
+    }
+    .custom-input::placeholder {
+      color: #5a616c;
+    }
+
+
+    .btn-orange {
+      background-color: #ff5722;
+      color: white;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+    .btn-orange:hover {
+      background-color: #e64a19;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-black py-3">
+  <div class="container">
+    
+    <a class="navbar-brand text-white fw-bold fs-3 logo" href="#">eli<span>ott</span></a>
+
+    <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="menu">
+      <ul class="navbar-nav gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+      <button class="btn rounded-circle text-white icon-btn">☼</button>
+      <button class="btn text-white rounded-pill px-4 py-2 fw-semibold hire-btn">Hire me →</button>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container py-5">
+  <div class="row align-items-center min-vh-100">
+
+    <!-- Left Content -->
+    <div class="col-lg-6">
+      <p class="text-orange fw-semibold text-uppercase small">Available for work</p>
+
+      <h1 class="display-1 fw-bold">
+        Hi, I'm <span class="text-orange">Aditya</span>
+      </h1>
+
+      <p class="fs-4 text-gray col-lg-10">
+        Freelance <b class="text-white">UI/UX Designer & Frontend Developer.</b>
+        I design and build digital products that people love to use — fast, clean, and accessible.
+      </p>
+
+      <div class="d-flex gap-3 my-4">
+        <button class="btn btn-light rounded-pill px-4 py-3 fw-semibold">View my work ↓</button>
+        <button class="btn btn-outline-secondary rounded-pill px-4 py-3 text-white">Get in touch</button>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="d-flex gap-5">
+        <div><h2 class="fw-bold">5+</h2><p class="text-gray mb-0">Projects done</p></div>
+        <div><h2 class="fw-bold">2+</h2><p class="text-gray mb-0">Happy clients</p></div>
+        <div><h2 class="fw-bold">2y</h2><p class="text-gray mb-0">Experience</p></div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-lg-6 text-center mt-5 mt-lg-0 position-relative">
+      <img src="../Images/Aditya image.jpg" class="hero-img img-fluid" alt="">
+      <span class="badge badge-orange rounded-pill px-4 py-3 position-absolute bottom-0 start-50 translate-middle-x">
+        Open to projects
+      </span>
+    </div>
+
+  </div>
+</div>
+
+    <section class="container py-5">
+  
+  <p class="text-orange fw-semibold small text-uppercase mb-2">What I do</p>
+  <h1 class="display-4 fw-bold mb-5">Services</h1>
+
+  <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card-box rounded-4 p-4 h-100">
+        <div class="icon-box rounded-4 d-flex justify-content-center align-items-center mb-4 fs-3 text-orange">
+          ⌨
+        </div>
+        <h3 class="fw-bold mb-3">UI/UX Design</h3>
+        <p class="text-gray fs-5">
+          From wireframes to polished Figma prototypes. Intuitive, visually compelling interfaces that convert visitors into users and put usability first.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card-box rounded-4 p-4 h-100">
+        <div class="icon-box rounded-4 d-flex justify-content-center align-items-center mb-4 fs-3 text-orange">
+          &lt;/&gt;
+        </div>
+        <h3 class="fw-bold mb-3">Frontend Dev</h3>
+        <p class="text-gray fs-5">
+          Production-grade code with CSS, Bootstrap, JavaScriptx. Pixel-perfect, fully responsive, SEO-friendly and blazing fast.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card-box rounded-4 p-4 h-100">
+        <div class="icon-box rounded-4 d-flex justify-content-center align-items-center mb-4 fs-3 text-orange">
+          ◔
+        </div>
+        <h3 class="fw-bold mb-3">Landing Pages</h3>
+        <p class="text-gray fs-5">
+          High-converting pages for SaaS, apps and personal brands. Designed to communicate value instantly and drive action.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <div class="container my-5 py-5">
+  <div class="row align-items-center justify-content-center g-5">
+    
+    <div class="col-12 col-md-5 col-lg-4 text-center">
+      <img src="../Images/Aditya image.jpg" 
+           class="img-fluid rounded-4 shadow" 
+           alt="Eliott Profile Picture" 
+           style="max-height: 400px; object-fit: cover; width: 100%;">
+    </div>
+
+    <div class="col-12 col-md-7 col-lg-6">
+      
+      <p class="text-uppercase fw-bold small tracking-wider text-orange mb-1" style="letter-spacing: 0.1rem;">
+        About Me
+      </p>
+      
+      <h1 class="text-white fw-bold display-5 mb-4">
+        A bit about<br>who I am
+      </h1>
+      
+      <p class="fs-5 lh-base mb-3">
+        I'm Aditya, a freelance designer and frontend developer based in Ahmedabad with 2 years of experience shipping digital products for startups, agencies, and scale-ups across Ahmedabad. I thrive at the intersection of great design and clean code.
+      </p>
+      <p class="fs-5 lh-base mb-5">
+        I believe great interfaces are invisible — they get out of the user's way. My work is fast, accessible and built to last. When I'm not coding, you'll find me hiking or hunting for a good espresso.
+      </p>
+      
+      <div>
+        <p class="text-uppercase fw-bold small text-muted mb-3" style="letter-spacing: 0.05rem;">
+          Stack & Tools
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge rounded-pill tool-badge px-3 py-2 fs-6 fw-normal">Figma</span>
+          <span class="badge rounded-pill tool-badge px-3 py-2 fs-6 fw-normal">HTML / CSS</span>
+          <span class="badge rounded-pill tool-badge px-3 py-2 fs-6 fw-normal">JavaScript</span>
+          <span class="badge rounded-pill tool-badge px-3 py-2 fs-6 fw-normal">Webflow</span>
+          <span class="badge rounded-pill tool-badge px-3 py-2 fs-6 fw-normal">Bootstrap</span>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</div>
+
+    <div class="container py-5">
+  <div class="contact-card p-4 p-md-5 rounded-5 shadow-lg border border-secondary border-opacity-10">
+    <div class="row g-5">
+      
+      <div class="col-12 col-lg-5 d-flex flex-column justify-content-between">
+        <div>
+          <p class="text-uppercase fw-bold small text-orange mb-2" style="letter-spacing: 0.08rem;">
+            Get in touch
+          </p>
+          <h1 class="text-white fw-bold display-4 mb-4">
+            Let's work<br>together
+          </h1>
+          <p class="text-secondary fs-5 lh-base mb-5" style="max-width: 420px;">
+            I'm open to UI/UX and frontend missions, short or long-term. Landing page, full product redesign, or just a second pair of eyes — let's talk.
+          </p>
+        </div>
+
+        <div class="d-flex flex-column gap-3 mb-4 mb-lg-0">
+          <div class="d-flex align-items-center gap-3">
+            <a href="mailto:hello@aditya.dev" class="social-icon-btn">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="mailto:hello@aditya.dev" class="text-secondary text-decoration-none hover-white">hello@aditya.dev</a>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <a href="#" class="social-icon-btn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="text-secondary text-decoration-none">linkedin.com/in/aditya-dev</a>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <a href="#" class="social-icon-btn">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" class="text-secondary text-decoration-none">github.com/aditya-dev</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-7">
+        <form action="#" method="POST" class="d-flex flex-column gap-4">
+          
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label for="userName" class="form-label text-secondary small fw-medium">Name *</label>
+              <input type="text" id="userName" class="form-control form-control-lg custom-input py-3" placeholder="Jane Smith" required>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="userEmail" class="form-label text-secondary small fw-medium">Email *</label>
+              <input type="email" id="userEmail" class="form-control form-control-lg custom-input py-3" placeholder="jane@company.com" required>
+            </div>
+          </div>
+
+          <div>
+            <label for="formSubject" class="form-label text-secondary small fw-medium">Subject</label>
+            <input type="text" id="formSubject" class="form-control form-control-lg custom-input py-3" placeholder="Project inquiry">
+          </div>
+
+          <div>
+            <label for="formMessage" class="form-label text-secondary small fw-medium">Message *</label>
+            <textarea id="formMessage" rows="5" class="form-control custom-input py-3" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <div class="mt-2">
+            <button type="submit" class="btn btn-orange btn-lg w-100 py-3 rounded-3 d-flex align-items-center justify-content-center gap-2">
+              Send message <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
