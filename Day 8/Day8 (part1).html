@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      #box {
+        width: 150px;
+        height: 150px;
+        background-color: #007bff;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      button {
+        padding: 10px 15px;
+        margin-right: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+      }
+
+      button:hover:not(:disabled) {
+        background-color: #e2e6ea;
+      }
+
+      button:disabled {
+        background-color: #e9ecef;
+        color: #6c757d;
+        border-color: #dee2e6;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <button id="btnHide">Hide</button>
+    <button id="btnShow" disabled>Show</button>
+    <button id="btnGrow">+</button>
+    <button id="btnShrink">-</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#btnHide").click(function () {
+          $(this).prop("disabled", true);
+          $("#box").hide(3000, function () {
+            $("#btnShow").prop("disabled", false);
+          });
+        });
+
+        $("#btnShow").click(function () {
+          $(this).prop("disabled", true);
+          $("#box").show(3000, function () {
+            $("#btnHide").prop("disabled", false);
+          });
+        });
+
+        $("#btnGrow").click(function () {
+          $("#box").animate(
+            {
+              width: "+=50px",
+              height: "+=50px",
+            },
+            300,
+          );
+        });
+
+        $("#btnShrink").click(function () {
+          var currentWidth = $("#box").width();
+          if (currentWidth > 50) {
+            $("#box").animate(
+              {
+                width: "-=50px",
+                height: "-=50px",
+              },
+              300,
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
